@@ -1,3 +1,3 @@
 def separate_with_comma(num)
-  # code goes here
+  num.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse
 end
